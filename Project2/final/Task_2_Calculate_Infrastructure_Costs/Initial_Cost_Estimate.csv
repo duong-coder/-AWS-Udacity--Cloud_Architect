@@ -1,0 +1,14 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,440,5280,USD,"Data transfer out to internet (5000 GB per month), Number of requests (HTTPS) (15000000 per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,209.5,2514,USD,S3 Standard storage (5000 GB per month)
+My Estimate,US East (N. Virginia),,VPN Connection,0,36.5,438,USD,"Working days per month (22), Number of Site-to-Site VPN Connections (1)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,257.85,3094.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Gateway Load Balancer,0,281.66,3379.92,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (5 GB per hour), Average number of new connections/flows (50000 per second), Average connection/flow duration (1 seconds)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,233.87,2806.44,USD,"Operating system (Linux), Quantity (4), Pricing strategy (On-Demand Instances), Storage amount (500 GB), Instance type (t2.micro)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,6865.92,82391.04,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (5000 GB), Quantity (2), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (5000 GB)"
+My Estimate,US East (N. Virginia),,AWS Data Transfer,0,1000,12000,USD,"DT Inbound: Internet (50000 GB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (50000 GB per month), Data transfer cost (1000)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
