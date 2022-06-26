@@ -1,0 +1,18 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Accessing Servers.
+
+C3 Students can use SSH to access AttackInstanceSG.
+However, according to common practices for accessing servers in the cloud, this is highly discouraged as it can leave the server open to SSH brute-force attacks.
+
+# Poor practice 2
+Securing S3.
+
+S3 is not encrypted.
+This makes unsafe data easily readable as it is unencrypted data. Instead we should encrypt before saving.
+
+# Poor practice 2 (Backup)
+Use Least Privilege Access
+
+Individual users have full access to S3. But this is not good. Instead, we should decentralize at least per user.

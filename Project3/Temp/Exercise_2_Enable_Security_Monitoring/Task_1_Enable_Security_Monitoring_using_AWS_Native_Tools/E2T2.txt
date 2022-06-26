@@ -1,0 +1,11 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+AttackInstanceSG:
+- 4.1 Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+
+WebAppSG:
+- 4.1 Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+- 4.2 Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389
+
+default:
+- 4.3 Ensure the default security group of every VPC restricts all traffic

@@ -1,0 +1,12 @@
+
+# What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+Only allow requests from domains available in the whitelist
+
+# Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+Using only VPC private endpoints will not prevent unauthorized access to the secret pool if the IAM permissions remain insecure.
+
+# Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+No, applying default encoding will not re-encrypt all existing files. You also need to go back and encrypt all the files.
+
+# What would happen if the original cloud formation templates are applied to this environment.
+Corrective steps taken will be reverted and all original security risks will return, so CloudFormation scripts will be updated with any necessary fixes.
