@@ -1,0 +1,20 @@
+AZ outage
+
+Minimum RTO for a single AZ outage:
+- In a Multi-AZ, for a single AZ outage, the RTO is the time it takes to start up a new RDS instance. 
+- So RTO is about 1-2 minutes. 
+
+Minimum RPO for a single AZ outage:
+- Data loss is minimised as we failover from our primary instance to our secondary instance with no data loss. 
+- So the RPO is 0.
+
+Region Outage
+
+In the event of a single region outage, the RTO is will be time to promote the replica. 
+
+Minimum RTO for a single region outage:
+- This is about 5 minutes to promote the replica. 
+
+Minimum RPO for a single region outage:
+- Read replica is asynchronous cross region so RPO is ±10 mins.
+

@@ -1,0 +1,64 @@
+Using username "ec2-user".
+Authenticating with public key "imported-openssh-key"
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+4 package(s) needed for security, out of 4 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-10-1-11-124 ~]$ mysql -h udacity.cevw5jozfrvp.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 23
+Server version: 8.0.28 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+MySQL [(none)]> create database udacity;
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| udacity            |
++--------------------+
+5 rows in set (0.00 sec)
+
+MySQL [(none)]> use udacity;
+Database changed
+
+MySQL [udacity]> create table products(id int auto_increment primary key, name varchar(50));
+Query OK, 0 rows affected (0.04 sec)
+
+MySQL [udacity]> insert into products(name) values('iphone');
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> select * from products;
++----+--------+
+| id | name   |
++----+--------+
+|  1 | iphone |
++----+--------+
+1 row in set (0.00 sec)
+
+MySQL [udacity]>
